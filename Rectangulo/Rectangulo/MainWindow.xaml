@@ -51,11 +51,21 @@
 
                 <!--Campo CX y CY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
-                    <TextBlock FontSize="20" Width="25">B</TextBlock>
+                    <TextBlock FontSize="20" Width="25">C</TextBlock>
                     <TextBox Name="txtCX" Height="25" Width="80"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
                     <TextBox Name="txtCY" Height="25" Width="80"></TextBox>
+
+                </StackPanel>
+
+                <!--Campo DX y DY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">D</TextBlock>
+                    <TextBox Name="txtDX" Height="25" Width="80"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtDY" Height="25" Width="80"></TextBox>
 
                 </StackPanel>
 
