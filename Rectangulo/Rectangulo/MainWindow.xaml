@@ -22,14 +22,27 @@
         </Grid.ColumnDefinitions>
 
         <!--Definicion de 1 Border-->
-        <Border Grid.RowSpan="5" Grid.ColumnSpan="4" Background="NavajoWhite">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="208,61,421,85" HorizontalAlignment="Center" Height="273" Width="163">
+        <Border Grid.RowSpan="4" Grid.ColumnSpan="3" Background="NavajoWhite">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="58,86,545,95" HorizontalAlignment="Center" Height="238" Width="189">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="22 3 0 0" FontSize="20">A</TextBlock>
-                    <TextBlock Margin="22 3 0 0" FontSize="20">B</TextBlock>
+                    <TextBlock Margin="75 0 0 0" FontSize="20">X</TextBlock>
+                    <TextBlock Margin="75 0 0 0" FontSize="20">Y</TextBlock>
                 </StackPanel>
+                
+                <!--Campo AX y AY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">A</TextBlock>
+                    <TextBox Name="txtAX" Height="25" Width="80"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtAY" Height="25" Width="80"></TextBox>
+
+                </StackPanel>
+
+
             </StackPanel>
         </Border>
+
 
     </Grid>
 </Window>
