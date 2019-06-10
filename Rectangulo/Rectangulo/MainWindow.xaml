@@ -7,6 +7,103 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <!--Definicion de Filas-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Definicion de Columnas-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Definicion de 1 Border-->
+        <Border Grid.RowSpan="4" Grid.ColumnSpan="3" Background="NavajoWhite">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="58,86,505,87" HorizontalAlignment="Center" Height="246" Width="229">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="75 0 0 0" FontSize="20">X</TextBlock>
+                    <TextBlock Margin="75 0 0 0" FontSize="20">Y</TextBlock>
+                </StackPanel>
+
+                <!--Campo AX y AY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">A</TextBlock>
+                    <TextBox Name="txtAX" Height="25" Width="80" Text="{Binding Path=AX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtAY" Height="25" Width="80" Text="{Binding Path=AY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+                </StackPanel>
+
+                <!--Campo BX y BY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">B</TextBlock>
+                    <TextBox Name="txtBX" Height="25" Width="80" Text="{Binding Path=BX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtBY" Height="25" Width="80" Text="{Binding Path=BY , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+
+                </StackPanel>
+
+                <!--Campo CX y CY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">C</TextBlock>
+                    <TextBox Name="txtCX" Height="25" Width="80" Text="{Binding Path=CX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtCY" Height="25" Width="80" Text="{Binding Path=CY, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+
+                </StackPanel>
+
+                <!--Campo DX y DY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">D</TextBlock>
+                    <TextBox Name="txtDX" Height="25" Width="80" Text="{Binding Path=DX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtDY" Height="25" Width="80" Text="{Binding Path=DY, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!--Creacion de 2 Border-->
+        <Border Grid.RowSpan="1" Grid.ColumnSpan="3" >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="354" Margin="402,43,122,-257" Width="268">
+                <TextBlock FontSize="30">Resultaos:</TextBlock>
+
+                <!--Altura-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Altura</TextBlock>
+                    <TextBox Name="txtAltura" Height="35" Width="150" Text="{Binding Path=Altura, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <!--Base-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Base</TextBlock>
+                    <TextBox Name="txtBase" Height="35" Width="150" Text="{Binding Path=Base, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <!--Perimetro-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Perimetro</TextBlock>
+                    <TextBox Name="txtPerimetro" Height="35" Width="150" Text="{Binding Path=Perimetro, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+                <!--Area-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Area</TextBlock>
+                    <TextBox Name="txtArea" Height="35" Width="150" Text="{Binding Path=Area, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+
+
     </Grid>
 </Window>
