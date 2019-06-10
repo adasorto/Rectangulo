@@ -111,6 +111,19 @@ namespace Rectangulo
             }
         }
 
+        public string CY
+        {
+            get { return cy; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) cy = value;
+                OnPropertyChanged("CY");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+            }
+        }
 
 
     }
