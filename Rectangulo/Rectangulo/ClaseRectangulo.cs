@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace Rectangulo
 {
-    class ClaseRectangulo : INotifyPropertyChanged
+    public class ClaseRectangulo : INotifyPropertyChanged
     {
         private string ax;
         private string ay;
@@ -25,10 +25,10 @@ namespace Rectangulo
 
         private string altura;
         private string base1;
-        private string primetro;
+        private string perimetro;
         private string area;
         private bool validacion;
-        private string resustado;
+        private string resultado;
 
         public string AX
         {
