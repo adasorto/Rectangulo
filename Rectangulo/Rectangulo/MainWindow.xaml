@@ -32,40 +32,41 @@
                 <!--Campo AX y AY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">A</TextBlock>
-                    <TextBox Name="txtAX" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtAX" Height="25" Width="80" Text="{Binding Path=AX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
-                    <TextBox Name="txtAY" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtAY" Height="25" Width="80" Text="{Binding Path=AY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
                 </StackPanel>
 
                 <!--Campo BX y BY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">B</TextBlock>
-                    <TextBox Name="txtBX" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtBX" Height="25" Width="80" Text="{Binding Path=Bx, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
-                    <TextBox Name="txtBY" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtBY" Height="25" Width="80" Text="{Binding Path=BY , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
 
                 </StackPanel>
 
                 <!--Campo CX y CY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">C</TextBlock>
-                    <TextBox Name="txtCX" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtCX" Height="25" Width="80" Text="{Binding Path=Cx, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
-                    <TextBox Name="txtCY" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtCY" Height="25" Width="80" Text="{Binding Path=CY, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                 </StackPanel>
 
                 <!--Campo DX y DY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">D</TextBlock>
-                    <TextBox Name="txtDX" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtDX" Height="25" Width="80" Text="{Binding Path=DX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
-                    <TextBox Name="txtDY" Height="25" Width="80"></TextBox>
+                    <TextBox Name="txtDY" Height="25" Width="80" Text="{Binding Path=DY, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                 </StackPanel>
             </StackPanel>
@@ -73,7 +74,7 @@
 
         <!--Creacion de 2 Border-->
         <Border Grid.RowSpan="1" Grid.ColumnSpan="3" >
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="354" Margin="346,43,214,-257" Width="232">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="354" Margin="402,43,122,-257" Width="268">
                 <TextBlock FontSize="30">Resultaos:</TextBlock>
 
                 <!--Altura-->
