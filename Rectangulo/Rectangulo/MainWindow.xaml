@@ -68,9 +68,19 @@
                     <TextBox Name="txtDY" Height="25" Width="80"></TextBox>
 
                 </StackPanel>
-
-
-
+            </StackPanel>
+        </Border>
+        
+        <!--Creacion de 2 Border-->
+        <Border Grid.RowSpan="1" Grid.ColumnSpan="3" >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="255" Margin="346,35,296,-150">
+                <TextBlock FontSize="30">Resultaos:</TextBlock>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="30">Altura</TextBlock>
+                    <TextBox Name="txtAltura" Height="35" Width="150"/>
+                </StackPanel>
+                
+                
             </StackPanel>
         </Border>
 
