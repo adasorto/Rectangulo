@@ -70,18 +70,18 @@
                 </StackPanel>
             </StackPanel>
         </Border>
-        
+
         <!--Creacion de 2 Border-->
         <Border Grid.RowSpan="1" Grid.ColumnSpan="3" >
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="255" Margin="346,35,296,-150">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="354" Margin="346,43,214,-257" Width="232">
                 <TextBlock FontSize="30">Resultaos:</TextBlock>
-                
+
                 <!--Altura-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Altura</TextBlock>
                     <TextBox Name="txtAltura" Height="35" Width="150"/>
                 </StackPanel>
-                
+
                 <!--Base-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Base</TextBlock>
@@ -92,6 +92,12 @@
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Perimetro</TextBlock>
                     <TextBox Name="txtPerimetro" Height="35" Width="150"/>
+                </StackPanel>
+
+                <!--Area-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Area</TextBlock>
+                    <TextBox Name="txtArea" Height="35" Width="150"/>
                 </StackPanel>
 
             </StackPanel>
