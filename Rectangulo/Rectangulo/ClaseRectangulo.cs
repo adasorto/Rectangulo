@@ -68,5 +68,19 @@ namespace Rectangulo
                 OnPropertyChanged("Base");
             }
         }
+
+        public string DX
+        {
+            get { return ax; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) dx = value;
+                OnPropertyChanged("DX");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+            }
+        }
     }
 }
