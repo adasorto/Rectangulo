@@ -96,5 +96,22 @@ namespace Rectangulo
                 OnPropertyChanged("Base");
             }
         }
+
+        public string BY
+        {
+            get { return by; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) ay = value;
+                OnPropertyChanged("BY");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+            }
+        }
+
+
+
     }
 }
