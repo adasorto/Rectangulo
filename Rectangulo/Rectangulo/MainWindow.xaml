@@ -49,6 +49,17 @@
 
                 </StackPanel>
 
+                <!--Campo CX y CY-->
+                <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
+                    <TextBlock FontSize="20" Width="25">B</TextBlock>
+                    <TextBox Name="txtCX" Height="25" Width="80"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtCY" Height="25" Width="80"></TextBox>
+
+                </StackPanel>
+
+
 
             </StackPanel>
         </Border>
