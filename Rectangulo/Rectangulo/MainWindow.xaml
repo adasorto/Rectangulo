@@ -78,14 +78,20 @@
                 
                 <!--Altura-->
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock FontSize="30">Altura</TextBlock>
+                    <TextBlock FontSize="20">Altura</TextBlock>
                     <TextBox Name="txtAltura" Height="35" Width="150"/>
                 </StackPanel>
                 
                 <!--Base-->
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock FontSize="30">Base</TextBlock>
+                    <TextBlock FontSize="20">Base</TextBlock>
                     <TextBox Name="txtBase" Height="35" Width="150"/>
+                </StackPanel>
+
+                <!--Perimetro-->
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="20">Perimetro</TextBlock>
+                    <TextBox Name="txtPerimetro" Height="35" Width="150"/>
                 </StackPanel>
 
             </StackPanel>
