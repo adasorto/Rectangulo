@@ -42,7 +42,7 @@
                 <!--Campo BX y BY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">B</TextBlock>
-                    <TextBox Name="txtBX" Height="25" Width="80" Text="{Binding Path=Bx, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+                    <TextBox Name="txtBX" Height="25" Width="80" Text="{Binding Path=BX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
                     <TextBox Name="txtBY" Height="25" Width="80" Text="{Binding Path=BY , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
@@ -53,7 +53,7 @@
                 <!--Campo CX y CY-->
                 <StackPanel Orientation="Horizontal" Margin="15,15,-55,15" Height="24">
                     <TextBlock FontSize="20" Width="25">C</TextBlock>
-                    <TextBox Name="txtCX" Height="25" Width="80" Text="{Binding Path=Cx, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
+                    <TextBox Name="txtCX" Height="25" Width="80" Text="{Binding Path=CX, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
 
                     <TextBlock FontSize="20">,</TextBlock>
                     <TextBox Name="txtCY" Height="25" Width="80" Text="{Binding Path=CY, Mode=TwoWay, UpdateSourceTrigger = PropertyChanged}"></TextBox>
@@ -80,25 +80,25 @@
                 <!--Altura-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Altura</TextBlock>
-                    <TextBox Name="txtAltura" Height="35" Width="150"/>
+                    <TextBox Name="txtAltura" Height="35" Width="150" Text="{Binding Path=Altura, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <!--Base-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Base</TextBlock>
-                    <TextBox Name="txtBase" Height="35" Width="150"/>
+                    <TextBox Name="txtBase" Height="35" Width="150" Text="{Binding Path=Base, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <!--Perimetro-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Perimetro</TextBlock>
-                    <TextBox Name="txtPerimetro" Height="35" Width="150"/>
+                    <TextBox Name="txtPerimetro" Height="35" Width="150" Text="{Binding Path=Perimetro, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <!--Area-->
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="20">Area</TextBlock>
-                    <TextBox Name="txtArea" Height="35" Width="150"/>
+                    <TextBox Name="txtArea" Height="35" Width="150" Text="{Binding Path=Area, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
             </StackPanel>

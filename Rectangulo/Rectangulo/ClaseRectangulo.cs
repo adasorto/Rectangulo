@@ -147,16 +147,18 @@ namespace Rectangulo
         {
             {
 
-
                 Double ab, dc, da, cb;
                 Double ab2, dc2, da2, cd2;
 
                 ab = Math.Pow((int.Parse(AX) - int.Parse(BX)), 2) + Math.Pow((int.Parse(AY) - int.Parse(BY)), 2);
-                ab2 = Math.Pow(Math.Sqrt(ab), 2);
+                ab2 = Math.Sqrt(ab);
+
                 dc = Math.Pow((int.Parse(DX) - int.Parse(CX)), 2) + Math.Pow((int.Parse(DY) - int.Parse(CY)), 2);
                 dc2 = Math.Sqrt(dc);
+
                 da = Math.Pow((int.Parse(DX) - int.Parse(AX)), 2) + Math.Pow((int.Parse(DY) - int.Parse(AY)), 2);
                 da2 = Math.Sqrt(da);
+
                 cb = Math.Pow((int.Parse(CX) - int.Parse(BX)), 2) + Math.Pow((int.Parse(CY) - int.Parse(BY)), 2);
                 cd2 = Math.Sqrt(cb);
 

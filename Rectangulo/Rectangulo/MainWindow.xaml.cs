@@ -24,7 +24,7 @@ namespace Rectangulo
         public MainWindow()
         {
             InitializeComponent();
-            rectangulo = new ClaseRectangulo { AX = "-2", AY = "0", BX = "2", BY = "0", CX = "4", CY = "4", DX = "2", DY = "3" };
+            rectangulo = new ClaseRectangulo { AX = "-2", AY = "0", BX = "6", BY = "0", CX = "6", CY = "2", DX = "-2", DY = "3" };
             this.DataContext = rectangulo;
         }
     }
