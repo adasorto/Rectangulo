@@ -13,12 +13,23 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <!--Definicion de Columnas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <!--Definicion de 1 Border-->
+        <Border Grid.RowSpan="5" Grid.ColumnSpan="4" Background="NavajoWhite">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="208,61,421,85" HorizontalAlignment="Center" Height="273" Width="163">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="22 3 0 0" FontSize="20">A</TextBlock>
+                    <TextBlock Margin="22 3 0 0" FontSize="20">B</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
     </Grid>
 </Window>
