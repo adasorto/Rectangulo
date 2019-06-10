@@ -71,13 +71,27 @@ namespace Rectangulo
 
         public string DX
         {
-            get { return ax; }
+            get { return dx; }
             set
             {
                 int numero;
                 bool resultado = int.TryParse(value, out numero);
                 if (resultado) dx = value;
                 OnPropertyChanged("DX");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+            }
+        }
+
+        public string AY
+        {
+            get { return ay; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) ay = value;
+                OnPropertyChanged("AY");
                 OnPropertyChanged("Altura");
                 OnPropertyChanged("Base");
             }
